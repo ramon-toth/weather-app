@@ -23,7 +23,7 @@ weartherForm.addEventListener('submit', (e)=> {
                     messageOne.textContent = data.error
                 } else {
                     messageOne.textContent = data.location
-                    messageTwo.textContent = data.forecast.description + `. It is currently ${data.forecast.temp} degrees out. It feels like ${data.forecast.feelslike}. There is a ${data.forecast.precip*100}% chance of rain.`
+                    messageTwo.textContent = data.forecast.description + `. It is currently ${data.forecast.temp} degrees out. It feels like ${data.forecast.feelslike}. There is a ${data.forecast.precip*100}% chance of rain. The current humidity is ${data.forecast.humidity}%`
                     console.log(data)
                 }
             })
